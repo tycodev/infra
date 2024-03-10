@@ -1,0 +1,4 @@
+export TF_VAR_virtual_environment_token=<token with id>
+export TF_VAR_virtual_environment_endpoint=<proxmox endpoint>
+export TF_VAR_virtual_machine_ssh_public_keyfile=<path to keyfile>
+export TF_VAR_virtual_environment_username=<proxmox username>
