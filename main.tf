@@ -37,7 +37,7 @@ resource "proxmox_virtual_environment_vm" "k3s-worker-node" {
     interface    = "virtio0"
     iothread     = true
     discard      = "on"
-    size         = 20
+    size         = 100
   }
 
   initialization {

@@ -23,7 +23,7 @@ users:
     sudo: ALL=(ALL) NOPASSWD:ALL
 runcmd:
     - apt update
-    - apt install -y qemu-guest-agent net-tools
+    - apt install -y qemu-guest-agent net-tools open-iscsi nfs-common linux-generic
     - timedatectl set-timezone America/New_York
     - systemctl enable qemu-guest-agent
     - systemctl start qemu-guest-agent
@@ -55,7 +55,7 @@ users:
     sudo: ALL=(ALL) NOPASSWD:ALL
 runcmd:
     - apt update
-    - apt install -y qemu-guest-agent net-tools
+    - apt install -y qemu-guest-agent net-tools open-iscsi nfs-common
     - timedatectl set-timezone America/New_York
     - systemctl enable qemu-guest-agent
     - systemctl start qemu-guest-agent
